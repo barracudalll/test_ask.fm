@@ -11,10 +11,22 @@ import Foundation
 
 protocol WeatherModelProtocol {
     
+    func searchQueryDidChange(newValue: String)
+    
 }
 
 // MARK: - WeatherModel
 
-class WeatherModel {
+class WeatherModel: WeatherModelProtocol, Networkable {
+    
+    // MARK: - Properties
+    
+    weak var dataSource: WeatherDataSource?
+    
+    // MARK: - Methods
+    
+    func searchQueryDidChange(newValue: String) {
+        // TODO: make request and update dataSource
+    }
     
 }

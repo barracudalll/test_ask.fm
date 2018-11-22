@@ -10,5 +10,5 @@ import Foundation
 // MARK: - LocationManager
 
 class LocationManager {
-    
+    // TODO: Return current location city name, request permissions
 }
